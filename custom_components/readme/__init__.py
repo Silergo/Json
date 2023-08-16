@@ -166,7 +166,7 @@ async def add_services(hass: HomeAssistant):
         template = Template(content)
         try:
             render = template.render(variables)
-            await write_file(hass, "README.md", render)
+            await write_file(hass, "/YW/data.json", render)
         except Exception as exception:
             LOGGER.error(exception)
 
